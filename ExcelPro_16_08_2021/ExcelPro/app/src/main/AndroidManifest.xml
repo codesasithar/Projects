@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.presidency.resultpro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/logoexcel"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logoexcel"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:ignore="AllowBackup">
+        <activity android:name=".uploadcred"></activity>
+        <activity android:name=".changepwd" />
+        <activity android:name=".resultlist" />
+        <activity android:name=".resultcard" />
+        <activity android:name=".choosedept" />
+        <activity android:name=".menudrawer"/>
+        <activity android:name=".internalverify" />
+        <activity android:name=".StudentResults" />
+        <activity android:name=".notificationchoice" />
+        <activity android:name=".teachercircular" />
+        <activity android:name=".teachernotifications" />
+        <activity android:name=".feedbackviewteacher" />
+        <activity android:name=".Subjects" />
+
+        <activity android:name=".excelbcom" />
+        <activity android:name=".ExcelUpload" />
+        <activity android:name=".FeedbackView" />
+        <activity android:name=".FeedbackSender" />
+        <activity android:name=".FacultyDashboard" />
+        <activity
+            android:name=".fragment.resultfaculty"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".ShowAllImagesFromStorage" />
+        <activity
+            android:name=".ImageAdapter"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".MarksExcelUpload" />
+        <activity android:name=".Graph_Subjects" />
+        <activity android:name=".UploadEvents" />
+        <activity android:name=".changepwdfaculty" />
+        <activity android:name=".FacultyLoginActivity" />
+        <activity android:name=".ExcelIt" />
+        <activity android:name=".Notifications" />
+        <activity android:name=".view.studentlistview" />
+        <activity android:name=".view.DetailsActivity" />
+        <activity android:name=".view.AddStudents" />
+        <activity android:name=".view.viewallstudents" />
+        <activity android:name=".view.ItemsActivity" />
+        <activity android:name=".view.UploadActivity" />
+        <activity android:name=".other.Notifications" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SignUpActivitynew" />
+        <activity android:name=".MainActivityfirst" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".PrivacyPolicyActivity" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".admincircular" />
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".graphDash" />
+        <activity android:name=".PieChartActivity" />
+        <activity android:name=".Ocr" />
+        <activity android:name=".dp" />
+        <activity android:name=".FeedbackTeachers" />
+        <activity android:name=".Feedbackchoice" />
+        <activity android:name=".Feedbackteachview" />
+        <activity android:name=".EventsActivity" />
+        <activity android:name=".PhotosActivity" />
+        <activity android:name=".PlacesActivity" />
+        <activity android:name=".FriendsActivity" />
+        <activity android:name=".NewsFeedActivity" />
+        <activity android:name=".graph" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".welcome" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>

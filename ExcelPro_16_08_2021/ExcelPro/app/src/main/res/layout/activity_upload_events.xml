@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/eventsbg"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#000000"
+        android:textAlignment="center"
+        app:cardBackgroundColor="#152d4b">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            android:gravity="center"
+            android:text="Create Events"
+            android:textColor="#ffffff"
+            android:textSize="34sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ShowImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/ButtonChooseImage"
+        android:layout_width="170dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Choose BANNER"
+        android:textColor="#000000" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="411dp">
+
+            <EditText
+                android:id="@+id/ImageNameEditText"
+                android:layout_width="401dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center"
+                android:hint="Enter Event Details here"
+                android:inputType="textMultiLine|textImeMultiLine"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ButtonUploadImage"
+                android:layout_width="170dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/btn"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="UPLOAD EVENT"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/DisplayImagesButton"
+                android:layout_width="170dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Show All EVENTS"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

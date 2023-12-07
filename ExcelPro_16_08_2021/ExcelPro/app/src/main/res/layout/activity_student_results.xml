@@ -1,0 +1,2900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/n"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#152d4b"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Marks Card"
+            android:textColor="#ffffff"
+            android:textSize="34sp" />
+
+        <Spinner
+            android:id="@+id/spinnersubject"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinnerbg"
+            android:clickable="true"
+            android:forceDarkAllowed="false"
+            android:gravity="center"
+            android:spinnerMode="dialog"
+            android:text="SEMESTER"
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/detailcard"
+            android:layout_width="377dp"
+            android:layout_height="206dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/facebook_button_color_pressed"
+            app:cardBackgroundColor="#152d4b">
+
+            <TextView
+                android:id="@+id/fetchedtextname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/descriptionEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="NAME :"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:text="REGISTER NUMBER :"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/regnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="80dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="120dp"
+                android:text="OVERALL PERCENTAGE :"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="120dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/grade1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="160dp"
+                android:text="GRADE :"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="160dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TableLayout
+                        android:id="@+id/resulttable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="20dp"
+                                android:text="SUBJECTS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="30dp"
+                                android:text="MARKS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text="PERCENTAGE(%)"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1011"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="1."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fet1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="INDIAN LANGUAGE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext51"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/comp1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1021"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="2."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="ENGLISH"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext1111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/lang1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1031"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="3."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedte1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="C LANGUAGE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/English1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1041001"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="4."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetched1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="COMPUTER ORGANISATION"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext101"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/cl1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10921"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="5."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/ftced1001"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="DM"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/officea1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/officepercentage1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10411"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="6."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/feched1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="C LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dm1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/Dm1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1051"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="7."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fe1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="OFFICE AUTOMATION"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext6661"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/clabpercent111"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1061"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="8."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetche1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="FOUNDATION COURSE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/found"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1001"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="9."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex81"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="CC and EC"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/ccnec"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/resulttable2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="20dp"
+                                android:text="SUBJECTS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="30dp"
+                                android:text="MARKS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text="PERCENTAGE(%)"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1012"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="1."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fet2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="INDIAN LANGUAGE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/comp2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1022"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="2."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="ENGLISH"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext1112"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/lang2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1032"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="3."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedte2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="DATA STRUCTURES"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/English2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1041002"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="4."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetched2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="DATABASE MANAGEMENT SYSTEM"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext102"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/cl2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10922"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="5."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/ftced1002"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="NUMERICAL AND STATISTICAL METHODS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/officea2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/officepercentage2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10412"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="6."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/feched2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="DATASTRUCTURES USING C LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dm2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/Dm2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1052"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="7."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fe2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="DBMS LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext6662"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/clabpercent112"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1062"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="8."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetche2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="FOUNDATION COURSE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext72"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/found2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1002"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="9."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex82"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="CC and EC"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext82"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/ccnec2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/resulttable3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="20dp"
+                                android:text="SUBJECTS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="30dp"
+                                android:text="MARKS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text="PERCENTAGE(%)"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1013"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="1."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fet3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="INDIAN LANGUAGE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext53"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/comp3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1023"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="2."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="ENGLISH"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext1113"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/lang3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1033"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="3."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedte3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="OOPS USING C++"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/English303"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1041003"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="4."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetched3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="FINANCIAL ACCOUNTING AND SYSTEM"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext103"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/cl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10923"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="5."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/ftced1003"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="OPERATING SYSTEM"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/officea3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/officepercentage3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10413"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="6."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/feched3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="OOPS USING C++ LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dm3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/English3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1053"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="7."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fe3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="TALLY LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext6663"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/clabpercent113"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1063"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="8."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetche3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="FOUNDATION COURSE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext73"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/found3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1003"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="9."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex83"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="CC and EC"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext83"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/ccnec3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/resulttable4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="20dp"
+                                android:text="SUBJECTS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="30dp"
+                                android:text="MARKS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text="PERCENTAGE(%)"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1014"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="1."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fet4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="INDIAN LANGUAGE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/comp4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1024"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="2."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="ENGLISH"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext1114"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/lang4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1034"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="3."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedte4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="VB.NET PROGRAMMING"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/English4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1041004"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="4."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetched4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="UNIX"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext104"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/cl4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10924"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="5."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/ftced1004"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="SOFTWARE PROGRAMMING"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/officea4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/officepercentage4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10414"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="6."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/feched4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="VB.NET LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dm4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/Dm4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1054"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="7."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fe4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="UNIX LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext6664"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/clabpercent114"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1064"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="8."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetche4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="SKILL DEVELOPMENT"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext74"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/found4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1004"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="9."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex84"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="CC and EC"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext84"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/ccnec4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/resulttable5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="20dp"
+                                android:text="SUBJECTS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="30dp"
+                                android:text="MARKS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text="PERCENTAGE(%)"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1015"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="1."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fet5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="DATA COMMUNICATION AND NETWORK"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext55"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/comp5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1025"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="2."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="ARTIFICIAL INTELLIGENCE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext1115"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/lang5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1035"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="3."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedte5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="JAVA PROGRAMMING"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext45"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/English5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1041005"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="4."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetched5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="ANALYSIS AND DESIGN OF ALGORITHM"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext105"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/cl5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10925"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="5."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/ftced1005"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="ELECTIVE 1"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/officea5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/officepercentage5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView10415"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="6."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/feched5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="JAVA PROGRAMMING LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dm5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/Dm5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1055"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="7."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fe5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="ANALYSIS AND DESIGN OF ALGORITHM LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext6665"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/clabpercent115"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1065"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="8."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetche5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="PROJECT"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext75"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/found5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1005"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="9."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex85"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="SKILL DEVELOPMENT COURSE"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext85"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/ccnec5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/resulttable6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="20dp"
+                                android:text="SUBJECTS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/asap"
+                                android:paddingLeft="30dp"
+                                android:text="MARKS"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text="PERCENTAGE(%)"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView101"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="1."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="SYSTEM PROGRAMMING"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/comp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1026"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="2."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedtex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="PROFESSIONAL AND BUSINESS COMMUNICATION"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext1116"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/lang"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1036"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="3."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetchedte6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="WEB PROGRAMMING"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext6wp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/English"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView104100"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="4."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fetched"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="ELECTIVE 2"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/cl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1092"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="5."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/ftced100"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="WEB PROGRAMMING LAB"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/officea"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/officepercentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView1041"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="6."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/feched"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="PROJECT"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dm6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/Dm6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView105"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="7."
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:id="@+id/fe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:text="SKILL DEVELOPMENT"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/fetchedtext666"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/clabpercent11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="30dp"
+                                android:text=""
+                                android:textColor="#000000"
+                                android:textSize="24sp" />
+
+
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foregroundGravity="center">
+
+            <Button
+                android:id="@+id/verifybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="75dp"
+                android:background="#152d4b"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="VERIFY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ovbtn5"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="16dp"
+                android:background="#152d4b"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="PERCENTAGE AND GRADE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+            <Button
+                android:id="@+id/ovbtn2"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="16dp"
+                android:background="#152d4b"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="PERCENTAGE AND GRADE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ovbtn4"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="16dp"
+                android:background="#152d4b"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="PERCENTAGE AND GRADE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ovbtn3"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="16dp"
+                android:background="#152d4b"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="PERCENTAGE AND GRADE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ovbtn"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="16dp"
+                android:background="#152d4b"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="PERCENTAGE AND GRADE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/ovbtn6"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="16dp"
+                android:background="#152d4b"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="PERCENTAGE AND GRADE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

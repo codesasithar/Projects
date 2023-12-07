@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#152d4b"
+    tools:context=".Graph_Subjects">
+
+    <Button
+        android:id="@+id/viewg"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="128dp"
+        android:background="@drawable/btn"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center"
+        android:text="VIEW GRAPHS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bgnotify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgnotify"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/TextViewNumberPassword1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="text|numberPassword"
+                android:text="FIRST SEMESTER"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="1.Indian Language"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="2.English"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="3.C language"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="4.Computer Organization"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5.Discrete Mathematics"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="6.C programming Lab"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName613"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="6.Office Automation"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName6134"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="7.Foundation Course"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName61345"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="9.CC and EC"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewNumberPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="text|numberPassword"
+                android:text="SECOND SEMESTER"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="1.Indian Language"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="2.English"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="3.Data Structures"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="4.Database Management System "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5.Numerical and Statistical Methods"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="6.Data Structures Using C Lab"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName6222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="7.DBMS lab"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName62222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="8.Foundation Course"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName622222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="9. CC and EC"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewNumberPassword3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="text|numberPassword"
+                android:text="THIRD SEMESTER"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="1.Indian language"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="2.English"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="3.OOPS using c++"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName344"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="4.Financial Accounting and System"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5.Operating system"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="6.OOPS using C++ Lab"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName660"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="7.Tally Lab"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName6609"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="8.Foundation Course"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66098"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="9.CCand EC"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewNumberPassword5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="text|numberPassword"
+                android:text="FOURTH SEMESTER"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="1.Indian Language"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="2.English"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="3.VB.Net Programming"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="4.Unix"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5.Software Programming"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="6.VB.Net Lab"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66456"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="7.Unix Lab"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66654"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="8.Skill Development Course"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66456RTFT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="9.CC and EC"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewNumberPassword6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="text|numberPassword"
+                android:text="FIFTH SEMESTER"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="1.Data Communication and Network"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="2.Arificial Intelligence"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="3.Java Programming"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="4.Analysis and Design of Algorithm"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5.Elective 1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="6. Java Programming lab"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66QWE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="7.Analysis and Design of Algorithm Lab"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66WER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="8.Project"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66TRY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="9.Skilll Devlopment Course"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/TextViewNumberPassword6FGH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="text|numberPassword"
+                android:text="SIXTH SEMESTER"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName16SHFG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="1.System Programming"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName26SFHGSFGHG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="2.Proffesional and Business Communication"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName6SFHG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="3.Web Programming"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName36JGH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="4.Elective 2"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName46JUYJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5.Web Programming Lab"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66JYTJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="6.Project"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextViewTextPersonName66FGHD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="7.Skill Development"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

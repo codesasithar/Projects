@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_main">#428bca</color>
+
+    <color name="input_login">#222222</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+
+    <color name="colorPrimary">#D2EBE3</color>
+        <color name="colorPrimaryDark">#D2EBE3</color>
+        <color name="colorAccent">#D81B60</color>
+
+    <color name="highlight_text">#17A1D7</color>
+
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="send_comment_button_activated">#0097d3</color>
+
+    <color name="facebook_button_color_pressed">#2f477a</color>
+
+    <color name="follow_button_light_color">@color/white</color>
+
+
+    <color name="dot_dark_screen1">#C2185B</color>
+        <color name="dot_dark_screen2">#430d64</color>
+        <color name="dot_dark_screen3">#00695C</color>
+        <color name="dot_dark_screen4">#ef6c00</color>
+        <color name="dot_dark_screen5">#3E2723</color>
+
+        <color name="dot_light_screen1">#F8BBD0</color>
+        <color name="dot_light_screen2">#E1BEE7</color>
+        <color name="dot_light_screen3">#80CBC4</color>
+        <color name="dot_light_screen4">#FFE0B2</color>
+        <color name="dot_light_screen5">#A1887F</color>
+
+
+        <array name="dot_active">
+            <item>@color/dot_light_screen1</item>
+            <item>@color/dot_light_screen2</item>
+            <item>@color/dot_light_screen3</item>
+            <item>@color/dot_light_screen4</item>
+            <item>@color/dot_light_screen5</item>
+        </array>
+
+        <array name="dot_inactive">
+            <item>@color/dot_dark_screen1</item>
+            <item>@color/dot_dark_screen2</item>
+            <item>@color/dot_dark_screen3</item>
+            <item>@color/dot_dark_screen4</item>
+            <item>@color/dot_dark_screen5</item>
+        </array>
+
+
+</resources>
