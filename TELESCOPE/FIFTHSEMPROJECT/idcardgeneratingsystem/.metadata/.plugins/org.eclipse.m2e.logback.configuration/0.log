@@ -1,0 +1,7 @@
+2020-09-10 19:27:52,602 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-10 19:28:01,511 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-09-10 19:28:42,482 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-10 19:28:49,876 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-09-10 19:29:35,688 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-10 19:30:09,769 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-10 19:30:16,166 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

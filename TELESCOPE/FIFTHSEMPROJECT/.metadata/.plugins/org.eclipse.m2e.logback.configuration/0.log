@@ -1,0 +1,12 @@
+2020-09-09 17:38:02,099 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-09 17:38:10,746 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-09-09 17:38:36,434 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-09 17:38:43,118 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-09-09 18:02:14,251 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-09 18:02:22,818 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-09-10 16:56:37,763 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-10 16:56:48,130 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-09-10 17:03:04,058 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-10 17:03:14,277 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-09-10 19:31:43,644 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "git" (in directory "\usr\bin"): CreateProcess error=2, The system cannot find the file specified
+2020-09-10 19:31:52,333 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

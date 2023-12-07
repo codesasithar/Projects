@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;idcardgeneratingsystem.idcardgeneratingsystem.java&apos; to &apos;Home.java&apos;&#x0D;&#x0A;- Original project: &apos;idcardgeneratingsystem&apos;&#x0D;&#x0A;- Original element: &apos;idcardgeneratingsystem.idcardgeneratingsystem.java&apos;&#x0D;&#x0A;- Renamed element: &apos;idcardgeneratingsystem.Home.java&apos;" description="Rename compilation unit &apos;idcardgeneratingsystem.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;idcardgeneratingsystem{idcardgeneratingsystem.java" name="Home.java" references="false" stamp="1599745749055" version="1.0"/>
+</session>
